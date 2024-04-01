@@ -8,13 +8,13 @@ html, body{
 
 div.title{
     background-color: black;
-    height: 100px;
+    height: 80px;
     vertical-align: middle;
 }
 
 div.menu{
     background-color: black;
-    height: 100px;
+    height: 50px;
 }
 
 div.sidemenu{
@@ -24,17 +24,27 @@ div.sidemenu{
 
 div.submenu{
     background-color: black;
-    height: 100px;
+    height: 50px;
+}
+
+div.viewer{
+    background-color: black;
+    height: 100%;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: whitesmoke;
 }
 
 div.footer{
     background-color: black;
-    height: 100px;
+    height: 30px;
+    text-align: right;
 }
 
 /* TABLES */
 
 table.main{
+    vertical-align: middle;
     background-color: brown;
     width: 100%;
     height: 100%;
@@ -44,36 +54,66 @@ table.main{
     border-color: whitesmoke;
 }
 table.title{
-    background-color: grey;
-    height: 100px;
+    padding: 5px;
+    background-color: black;
     width: 100%;
-    padding: 10px;
     vertical-align: middle;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: lightblue;
+    font-family: Lato;
+    font-size: 3em;
+    color: whitesmoke;
 }
 
 table.menu{
-    background-color: grey;
+    text-align: center;
+    background-color: black;
     height: 100%;
+    width: 100%;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: whitesmoke;
 }
 
 table.sidemenu{
     width: 100%;
-    height: 100%;
-    padding-top: 10px;
-    background-color: grey;
+    padding: 5px;
+    background-color: black;
     align-content: center;
     text-align: center;
     vertical-align: top;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: whitesmoke;
 }
 
 table.submenu{
-    background-color: darkolivegreen;
+    text-align: center;
+    background-color: black;
     height: 100%;
+    width: 100%;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: whitesmoke;
 }
 
 table.footer{
-    background-color: grey;
+    text-align:right;
+    padding-right: 10px;
+    font-family: Lato;
+    font-size: 0.6em;
+    background-color: black;
     height: 100%;
+    width: 100%;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: whitesmoke;
+}
+
+table.viewer{
+    width: 100%;
+    padding: 10px;
 }
 
 
@@ -85,8 +125,50 @@ td.sidemenu{
 
 a.menu{
     display: inline-block;
-    font-size: 1em;
+    font-family: Lato;
+    text-transform: uppercase;
+    font-size: 1.4em;
     font-style: none;
+    text-decoration: none;
+    text-align: center;
     background-color: white;
     color: black;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 5px;
+    width: 180px;
+}
+
+a.sidemenu{
+    display: inline-block;
+    font-family: Lato;
+    font-size: 0.9em;
+    font-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 5px;
+    width: 100px;
+}
+
+a.submenu{
+    display: inline-block;
+    font-family: Lato;
+    font-size: 1.2em;
+    font-style: none;
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 5px;
+    width: 100px;
 }

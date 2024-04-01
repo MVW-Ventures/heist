@@ -11,27 +11,38 @@
 <body>
 
     <table class="main">
-        <tr height="100px">
+        <tr height="80px">
             <td colspan=2>
                 <div class="title">
                     {% block title %}
-                        <h1>HEIST Athletics</h1>
+                    <table class="title">
+                        <tr>
+                            <td>
+                                HEIST Athletics
+                            </td>
+                        </tr>
+                    </table>
                     {% endblock %}
                 </div>
             </td>
         </tr>
 
-        <tr height="100px">
+        <tr height="50px">
             <td colspan=2>
                 <div class="menu">
                     {% block menu %}
-                        Menu
+                    <table class="menu">
+                        <tr>
+                            <td><a href="{% url 'info' %}" class="menu">Info</a></td>
+                            <td></td>
+                        </tr>
+                    </table>
                     {% endblock %}
                 </div>
             </td>
         </tr>
 
-        <tr height="100px">
+        <tr height="50px">
             <td class="sidemenu" rowspan=2>
                 <div class="sidemenu">
                     {% block sidemenu %}
@@ -52,7 +63,15 @@
             <td>
                 <div class="submenu">
                     {% block submenu %}
-                        Submenu
+                        <table class="submenu">
+                            <tr>
+                                <td>
+                                    <a href="" class="submenu">Submenu</a>
+                                    <a href="" class="submenu">Submenu</a>
+                                    <a href="" class="submenu">Submenu</a>
+                                </td>
+                            </tr>
+                        </table>
                     {% endblock %}
                 </div>
             </td>
@@ -60,17 +79,31 @@
 
         <tr>
             <td>
+                <div class="viewer">
                 {% block content %}
-                    Content
+                <table class="viewer">
+                    <tr>
+                        <td>
+                            Content
+                        </td>
+                    </tr>
+                </table>
                 {% endblock %}
+                </div>
             </td>
         </tr>
 
-        <tr height="100px">
+        <tr height="30px">
             <td colspan=2>
                 <div class="footer">
                     {% block footer %}
-                    Footer
+                    <table class="footer">
+                        <tr>
+                            <td>
+                                Software Developed and Licensed for Use by MVW Ventures, 2024
+                            </td>
+                        </tr>
+                    </table>
                     {% endblock %}
                 </div>
             </td>
