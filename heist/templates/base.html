@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>HEIST Gym</title>
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    
+
+</head>
+
+<body>
+
+    <table class="main">
+        <tr height="100px">
+            <td colspan=2>
+                <div class="title">
+                    {% block title %}
+                        <h1>HEIST Athletics</h1>
+                    {% endblock %}
+                </div>
+            </td>
+        </tr>
+
+        <tr height="100px">
+            <td colspan=2>
+                <div class="menu">
+                    {% block menu %}
+                        Menu
+                    {% endblock %}
+                </div>
+            </td>
+        </tr>
+
+        <tr height="100px">
+            <td class="sidemenu" rowspan=2>
+                <div class="sidemenu">
+                    {% block sidemenu %}
+                        <table class="sidemenu">
+                            <tr>
+                                <td>
+                                    Sidemenu
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                            </tr>
+                        </table>
+                    {% endblock %}
+                </div>
+            </td>
+            <td>
+                <div class="submenu">
+                    {% block submenu %}
+                        Submenu
+                    {% endblock %}
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                {% block content %}
+                    Content
+                {% endblock %}
+            </td>
+        </tr>
+
+        <tr height="100px">
+            <td colspan=2>
+                <div class="footer">
+                    {% block footer %}
+                    Footer
+                    {% endblock %}
+                </div>
+            </td>
+        </tr>
+
+    </table> 
+
+</body>
+</html>

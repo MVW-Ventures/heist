@@ -1,0 +1,90 @@
+html, body{
+    background-color: black;
+    color: white;
+    font-size: 12pt;
+}
+
+/* DIVS */
+
+div.title{
+    background-color: blue;
+    height: 100px;
+    vertical-align: middle;
+}
+
+div.menu{
+    background-color: black;
+    height: 100px;
+}
+
+div.sidemenu{
+    height: 100%;
+    background-color: black;
+}
+
+div.submenu{
+    background-color: black;
+    height: 100px;
+}
+
+div.footer{
+    background-color: black;
+    height: 100px;
+}
+
+/* TABLES */
+
+table.main{
+    background-color: brown;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: whitesmoke;
+}
+table.title{
+    background-color: blue;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+table.menu{
+    background-color: black;
+    height: 100%;
+}
+
+table.sidemenu{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    background-color: blue;
+    align-content: center;
+    text-align: center;
+    vertical-align: top;
+}
+
+table.submenu{
+    background-color: black;
+    height: 100%;
+}
+
+table.footer{
+    background-color: black;
+    height: 100%;
+}
+
+
+td.sidemenu{
+    width: 10%;
+}
+
+/* Anchors */
+
+a.menu{
+    display: inline-block;
+    font-size: 1em;
+    font-style: none;
+}
